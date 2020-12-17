@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="522.0">
+         <children>
+            <Label layoutX="155.0" layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Игра &quot;Угадайка слов&quot;" textAlignment="CENTER" textFill="#1c5263">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textField" layoutX="126.0" layoutY="208.0" onAction="#equalWord" prefHeight="30.0" prefWidth="270.0" visible="false" />
+            <Button fx:id="buttonGuess" layoutX="204.0" layoutY="308.0" mnemonicParsing="false" onAction="#equalWord" prefHeight="30.0" prefWidth="98.0" text="Угадать слово" visible="false" />
+            <Label fx:id="labelPrompt" layoutX="104.0" layoutY="251.0" prefHeight="30.0" prefWidth="300.0" />
+            <Label fx:id="label1" layoutX="61.0" layoutY="29.0" prefHeight="37.0" prefWidth="251.0" text="Угадайте слово из представленных ниже:" visible="false" />
+            <Label fx:id="labelPromptTxt" layoutX="17.0" layoutY="251.0" prefHeight="30.0" prefWidth="74.0" text="Подсказка:" visible="false" />
+            <Button fx:id="buttonGame" layoutX="204.0" layoutY="132.0" mnemonicParsing="false" onAction="#playGame" prefHeight="30.0" prefWidth="98.0" text="Начать игру" />
+            <ListView fx:id="listWords" editable="true" layoutX="61.0" layoutY="67.0" prefHeight="96.0" prefWidth="399.0" visible="false" />
+            <Label fx:id="label2" layoutX="17.0" layoutY="208.0" prefHeight="30.0" prefWidth="88.0" text="Введите слово:" visible="false" />
+            <Button fx:id="buttonRetun" layoutX="396.0" layoutY="281.0" mnemonicParsing="false" onAction="#returnGame" prefHeight="30.0" prefWidth="108.0" text="Играть ещё" visible="false" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
